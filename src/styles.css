@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("./assets/img/black-black-and-white-blur-112854.jpg");
+
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.matCard {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);  
+}
+.game-container {
+    background: rgba(255, 255, 255, 0);
+    padding: 10px;
+    text-align: center;  
+} 
+.spanText {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgba(0, 0, 0, 1);
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.ownerface-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}

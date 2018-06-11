@@ -1,0 +1,6 @@
+<mat-card class="matCard">
+  <div class="game-container" *ngFor="let member of members | async">
+    {{ member.member }}
+    <img class="ownerface-container" src="{{ member.memberFace }}"/>
+  </div>
+</mat-card>

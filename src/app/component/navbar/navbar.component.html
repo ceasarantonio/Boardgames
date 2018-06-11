@@ -1,0 +1,11 @@
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item routerLink="/">Home</button>
+  <button mat-menu-item routerLink="/about">About</button>
+  <button mat-menu-item routerLink="/members">Members</button>
+  <button mat-menu-item routerLink="/games">Games</button>
+  <button mat-menu-item routerLink="/leaderboard">Leaderboard</button>
+</mat-menu>
+
+<button mat-raised-button color="primary" [matMenuTriggerFor]="appMenu">
+  Menu
+</button>

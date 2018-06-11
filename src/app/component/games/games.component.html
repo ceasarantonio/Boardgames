@@ -1,0 +1,26 @@
+
+<mat-card class="matCard">
+  <mat-accordion class="example-headers-align" *ngFor="let boardGame of boardGames | async">
+      <mat-expansion-panel hideToggle="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ boardGame.owner }}
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ boardGame.boardGame }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <span>{{ boardGame.info }}</span>
+        <span><img class="ownerface-container" src="{{ boardGame.boardGamePicture }}"/></span>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+
+
+
+  boardGame
+  boardGamePicture
+  info
+  owner
+  ownerFace
+  points
